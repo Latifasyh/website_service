@@ -8,7 +8,7 @@
   border-bottom: 1px solid #ddd;
 }
 
-/* Style des liens */
+
 .navbar .nav-link {
   color: #fff !important;
   margin: 0 10px;
@@ -17,20 +17,20 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Hover : plus foncé */
+
 .navbar .nav-link:hover {
-  background-color: #4b2f80; /* plus foncé */
+  background-color: #4b2f80;
   text-decoration: underline;
 }
 
-/* Active : lien sélectionné */
+
 .navbar .nav-link.active {
-  background-color: #3a2360; /* encore plus foncé */
+  background-color: #3a2360;
   text-decoration: none;
   color: #fff !important;
 }
 
-/* Bouton search */
+
 .navbar .btn.btn-outline-success {
   border-color: #fff;
   color: #fff;
@@ -41,14 +41,14 @@
   color: mediumpurple;
 }
 
-/* Champ search */
+
 .navbar .form-control {
   border: none;
   background-color: #fff;
   color: #333;
 }
 
-/* Padding pour éviter que le contenu passe sous la navbar */
+
 body {
   padding-top: 70px;
 }
