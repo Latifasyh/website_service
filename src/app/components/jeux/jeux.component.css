@@ -1,0 +1,24 @@
+.jeux-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.jeux-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.jeux-card {
+  background-color: #fff0f5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.jeux-card img {
+  width: 100%;
+  border-radius: 8px;
+}

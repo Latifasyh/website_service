@@ -1,0 +1,47 @@
+.sport-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.sport-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* espace entre les cartes */
+}
+
+.sport-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.sport-card:hover {
+  transform: translateY(-5px);
+}
+
+.sport-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.sport-card h3 {
+  color: #007bff;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.sport-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.sport-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}

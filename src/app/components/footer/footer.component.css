@@ -1,0 +1,21 @@
+.footer {
+  background-color: mediumpurple;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #ddd;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  height: 26px;               
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
