@@ -1,0 +1,18 @@
+/* styles.css ou users.component.css */
+.table {
+
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.table thead th {
+  background-color: #52435f;
+  color: #fff;
+}
+
+.table tr:hover {
+  background-color: #e0fbfc;
+}
+.content {
+  padding-top: 70px;
+}

@@ -10,6 +10,8 @@ import { ScienceComponent } from './components/science/science.component';
 import { JeuxComponent } from './components/jeux/jeux.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { HomeComponent } from './components/home/home.component';
     ScienceComponent,
     JeuxComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration(withEventReplay())
