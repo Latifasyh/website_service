@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { UserserviceService } from '../../services/userservice.service';
 interface User {
-  id: number;
+ /*  id: number;
   name: string;
   username: string;
-  email: string;
+  email: string; */
   // ajoute d'autres propriétés si besoin
+
+  id:number;
+  nom :string;
+  email:string;
+  mp:string;
 }
 
 
@@ -28,9 +33,31 @@ export class UsersComponent implements OnInit{
 
   getUsersNow() {
      this.usersService.getUsers().subscribe(res => {
-      this.users = res;              
+      this.users = res;
       console.log(this.users);
     });
+  }
+
+  //postmethod
+  myuser:any={
+    id:'',
+    nom:'',
+    email:'',
+    mp:''
+  }
+  creer(){
+    this.usersService.creer(this.myuser)
+    .subscribe((V)=>{
+      this.users=[V, ...this.users];
+      //vider les champs
+       this.myuser = {
+      id: '',
+      nom: '',
+      email: '',
+      mp: ''
+    };
+
+    })
   }
 
 

@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class UserserviceService {
 
- private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+ //private apiUrl = 'https://jsonplaceholder.typicode.com/users';
+ private apiUrl='http://localhost:5000/users' ;
 
   constructor(private http: HttpClient) { }
 
@@ -17,5 +18,16 @@ export class UserserviceService {
    getUsers(): Observable<any> {
     return this.http.get(this.apiUrl);
   }
+
+  //postMethod
+
+  /*   postUsers(data: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, data);
+  } */
+
+    creer(user:any):Observable<any>
+    {
+      return this.http.post(this.apiUrl,user);
+    }
 
 }
